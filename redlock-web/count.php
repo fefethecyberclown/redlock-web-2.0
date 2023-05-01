@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("redlock-db-cont", "root", "password", "Redlock",3306);
+$mysqli = new mysqli("redlock-db-container", "root", "password", "Redlock",3306);
 if ($mysqli->connect_error) {
   echo "Failed to connect to MySQL: " . $mysqli->connect_error;
   exit();
