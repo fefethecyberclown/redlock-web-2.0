@@ -2,6 +2,7 @@ FROM php:8.1-apache
 
 # copy web content
 COPY index.php /var/www/html/
+COPY count.php /var/www/html
 
 # install dependencies
 RUN docker-php-ext-install mysqli
